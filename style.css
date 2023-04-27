@@ -16,6 +16,10 @@
 
 body {
     background-color: var(--Pale-blue);
+    margin: 0;
+    background-image: url(pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    
 }
 
 
