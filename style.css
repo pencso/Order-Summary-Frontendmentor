@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
+:root {
+/* ### Primary */
+--Pale-blue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%);
+
+/* ### Neutral */
+
+--Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+
+}
+
+body {
+    background-color: var(--Pale-blue);
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 420px;
+    height: 590px;
+    text-align: center;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: white;
+    font-family: 'Red Hat Display', sans-serif;
+    gap: 1.2rem;
+}
+
+.annual-plan {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: var(--Very-pale-blue);
+    border-radius: 1rem;
+    padding: 0.3rem 1.1rem;
+
+}
+
+
+.annual-plan-text h2 {
+    font-size: 1rem;
+    font-weight: 900;
+    margin-bottom: -0.8rem;
+}
+
+.annual-plan a {
+    margin-left: auto;
+   
+    font-size: 0.9rem;
+    color: hsl(245, 75%, 52%);
+    font-weight: 900;
+
+}
+
+
+.pay-button {
+    background-color: var(--Bright-blue);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.6rem;
+    cursor: pointer;
+}
+
+.pay-button h4 {
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.pay-button:hover {
+    background-color: hsla(228, 45%, 44%, 0.842);
+    
+}
+
+.container h5 {
+    color: hsl(224, 23%, 55%);
+    cursor: pointer;
+}
+
+.container h5:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+.annual-plan a:hover {
+    color:  hsla(228, 45%, 44%, 0.842);
+    text-decoration: none;
+}
+
+.container h1 {
+    
+    font-size: 1.600rem;
+    color: var(--Dark-blue);
+    font-weight: 900;
+    padding-top: .8rem;
+}
+
+.container p {
+    font-size: 1rem;
+    color: var(--Desaturated-blue);
+    font-weight: 500;
+    
+}
+
+
+.container > *:not(:first-child) {
+    margin: 0rem 3.3rem;
+  }
+
+
+/* footer */
+
+
+.attribution {
+    font-size: 11px; 
+    text-align: center; 
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: 0.5rem;
+
+}
+
+.attribution a { 
+   color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 446px) {
+    .container {
+        width: 90%;
+    }
+
+    .container > *:not(:first-child) {
+        margin: 0rem 1.5rem;
+      }
+}
